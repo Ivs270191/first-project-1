@@ -1,0 +1,12 @@
+.mobile-button {
+  display: none;
+  @media screen and (max-width: 1280px) {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    fill: var(--primary-white);
+    cursor: pointer;
+  }
+}

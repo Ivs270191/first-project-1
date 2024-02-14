@@ -1,0 +1,16 @@
+.button {
+  border-radius: 8px;
+  border: 2px solid var(--primary-green);
+  background-color: var(--primary-green);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--primary-white);
+  max-width: 238px;
+  max-height: 60px;
+}
+.button:hover {
+  cursor: pointer;
+}

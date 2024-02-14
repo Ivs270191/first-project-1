@@ -1,0 +1,86 @@
+.third-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 96px;
+  padding: 0 96px;
+  @media screen and (max-width: 1280px) {
+    margin: 0 20px 40px;
+  }
+  &__title {
+    max-width: 520px;
+    position: relative;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 84px;
+    color: var(--primary-black);
+    text-align: center;
+    margin-bottom: 80px;
+    @media screen and (max-width: 1280px) {
+      margin-bottom: 24px;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+    & span {
+      color: var(--primary-green);
+    }
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 352px;
+      bottom: 24px;
+      border: 2px solid var(--secondary-grey);
+      right: 500px;
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 352px;
+      bottom: 24px;
+      border: 2px solid var(--secondary-grey);
+      left: 500px;
+      @media screen and (max-width: 1280px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.chefs-container {
+  display: flex;
+  gap: 30px;
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.chefs-card {
+  display: flex;
+  gap: 30px;
+  flex-basis: calc((100% - 30px) / 2);
+  @media screen and (max-width: 1280px) {
+    gap: 16px;
+  }
+
+  &__img {
+    max-height: 390px;
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--primary-white),
+      -16px 16px 0 2px var(--secondary-brown);
+    border-radius: 4px 4px 4px 200px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+.pagination {
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  &__button {
+    border: none;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    background-color: var(--secondary-brown);
+    &:hover {
+      background-color: var(--secondary-green);
+    }
+  }
+}

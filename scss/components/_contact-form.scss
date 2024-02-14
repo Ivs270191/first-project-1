@@ -1,0 +1,41 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+
+  &__field {
+    max-width: 605px;
+    max-height: 55px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-brown);
+  }
+  &__input {
+    background-color: var(--primary-white);
+    border: none;
+    padding: 8px 42px;
+    margin: 16px 42px;
+    max-width: 521px;
+    max-height: 23px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+  }
+  &__politics {
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &--link {
+      text-decoration: underline;
+      color: var(--primary-black);
+    }
+  }
+}

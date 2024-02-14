@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  height: 240px;
+  background-color: var(--primary-black);
+  background-image: url(../images/footer-background@x1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 32px 100px;
+  position: relative;
+  @media screen and (max-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/footer-left-bread@x1.png);
+    content: "";
+    width: 380px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 1280px) {
+      position: absolute;
+      left: 0;
+      top: 84px;
+      background-image: url(../images/footer-mobile-bread-left@x1.png);
+      content: "";
+      width: 92px;
+      height: 196px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../images/footer-right-bread@x1.png);
+    content: "";
+    width: 380px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 1280px) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url(../images/footer-mobile-bread-right@x1.png);
+      content: "";
+      width: 112px;
+      height: 124px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    &--items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &__politics {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+.social-icons {
+  fill: var(--primary-white);
+}
+.copyright {
+  color: var(--secondary-brown);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
