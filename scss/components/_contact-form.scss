@@ -3,7 +3,9 @@
   flex-direction: column;
 
   gap: 24px;
-
+  @media screen and (max-width: 1280px) {
+    margin: 0 20px;
+  }
   &__field {
     max-width: 605px;
     max-height: 55px;
@@ -13,7 +15,6 @@
   &__input {
     background-color: var(--primary-white);
     border: none;
-    padding: 8px 42px;
     margin: 16px 42px;
     max-width: 521px;
     max-height: 23px;
@@ -21,6 +22,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media screen and (max-width: 1280px) {
+      margin: 8px 24px;
+    }
   }
   &__button {
     display: block;
