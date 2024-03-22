@@ -770,4 +770,12 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal__title {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
