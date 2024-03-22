@@ -40,7 +40,10 @@
           </li>
         </ul>
 
-        <button class="button first-section__button" type="button">
+        <button
+          class="button first-section__button modal-btn-open"
+          type="button"
+        >
           <nobr>Замовити дзвінок</nobr>
         </button>
         <button class="mobile-button" type="button">
@@ -284,5 +287,52 @@
         <p class="copyright">© 2022 Дані захищені</p>
       </div>
     </div>
+    <div class="fifth-section__form modal is-hidden">
+      <p class="fifth-section__form--text">
+        Заповни форму, щоб ми звʼязались з тобою!
+      </p>
+      <div class="contact-form">
+        <div class="contact-form__field">
+          <input
+            class="contact-form__input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Ім’я"
+          />
+        </div>
+        <div class="contact-form__field">
+          <input
+            class="contact-form__input"
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="contact-form__field">
+          <input
+            class="contact-form__input"
+            type="email"
+            name="user-email"
+            id="user-email"
+            placeholder="Електронна пошта"
+          />
+        </div>
+        <button
+          class="button contact-form__button modal-btn-close"
+          type="button"
+        >
+          <nobr>Замовити дзвінок</nobr>
+        </button>
+        <p class="contact-form__politics">
+          Натискаючи на кнопку я погоджуюсь
+          <a class="contact-form__politics--link" href=""
+            >з політикою конфіденційності</a
+          >
+        </p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

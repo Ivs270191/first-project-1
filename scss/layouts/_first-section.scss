@@ -1,37 +1,36 @@
 .first-section {
   width: 100%;
   height: 736px;
-  background-image: linear-gradient(
-      103deg,
+  background-image: linear-gradient(103deg,
       rgba(18, 18, 17, 0.78) 2.03%,
       rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%
-    ),
+      rgba(18, 18, 17, 0) 90.36%),
     url(../images/main-background_x1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 
   @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        103deg,
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(103deg,
         rgba(18, 18, 17, 0.78) 2.03%,
         rgba(18, 18, 17, 0.6) 58.46%,
-        rgba(18, 18, 17, 0) 90.36%
-      ),
+        rgba(18, 18, 17, 0) 90.36%),
       url(../images/main-background_x2.png);
   }
+
   @media screen and (max-width: 1280px) {
     margin-bottom: 40px;
   }
+
   &__menu {
     display: flex;
     justify-content: space-around;
     margin-bottom: 182px;
     padding-top: 32px;
     gap: 10px;
+
     @media screen and (max-width: 1280px) {
       justify-content: space-between;
       padding: 16px 20px;
@@ -49,15 +48,18 @@
     font-weight: 600;
     line-height: normal;
     color: var(--primary-white);
+
     @media screen and (max-width: 1280px) {
       display: none;
     }
+
     &-items {
       display: flex;
       align-content: center;
       flex-wrap: wrap;
       transition: transform 0.3s;
     }
+
     &-items:hover {
       transform: scale(1.1);
       color: var(--primary-green);
@@ -73,23 +75,28 @@
     font-weight: 900;
     line-height: normal;
     margin-bottom: 272px;
+
     @media screen and (max-width: 1280px) {
       font-size: 67px;
       font-style: normal;
       font-weight: 900;
       line-height: 66px;
     }
+
     & .accent {
       color: var(--primary-green);
     }
   }
+
   &__button {
     @media screen and (max-width: 1280px) {
       display: none;
     }
   }
+
   &__mobile-button {
     display: none;
+
     @media screen and (max-width: 1280px) {
       display: block;
       margin: 0 auto;
