@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <!-- scss -->
-    <link rel="stylesheet" href="./scss/main.min.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <!-- 1 section -->
@@ -52,7 +52,7 @@
           </svg>
         </button>
       </div>
-      <h1 class="first-section__title">
+      <h1 class="first-section__title color">
         <span class="accent">Сучасна</span> пекарня
       </h1>
       <button class="button first-section__mobile-button" type="button">
@@ -121,7 +121,7 @@
             <h3>Влад</h3>
             <p>Привіт, я Влад!</p>
             <p>
-              Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з
+              Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з
               якою ми ділимось кожен раз з Вами через нашу випічку!
             </p>
             <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
@@ -287,49 +287,65 @@
         <p class="copyright">© 2022 Дані захищені</p>
       </div>
     </div>
-    <div class="modal is-hidden">
-      <button class="modal-btn-close" type="button"></button>
-      <h2 class="modal__title">Замовити дзвінок</h2>
-      <p class="fifth-section__form--text">
-        Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
-      </p>
-      <div class="contact-form">
-        <div class="contact-form__field">
-          <input
-            class="contact-form__input"
-            type="text"
-            name="user-name"
-            id="user-name"
-            placeholder="Ім’я"
-          />
-        </div>
-        <div class="contact-form__field">
-          <input
-            class="contact-form__input"
-            type="tel"
-            name="user-tel"
-            id="user-tel"
-            placeholder="Телефон"
-          />
-        </div>
-        <div class="contact-form__field">
-          <input
-            class="contact-form__input"
-            type="email"
-            name="user-email"
-            id="user-email"
-            placeholder="Електронна пошта"
-          />
-        </div>
-        <button class="button contact-form__button" type="button">
-          <nobr>Замовити дзвінок</nobr>
+    <!-- modal -->
+    <div class="modal-background is-hidden">
+      <div class="modal">
+        <img
+          class="modal__img"
+          srcset="
+            ./images/modal-bread@x1.png 1x,
+            ./images/modal-bread@x2.png 2x
+          "
+          src="./images/modal-bread@x2.png"
+          alt="baton"
+        />
+        <button class="modal__close-btn" type="button">
+          <svg class="modal__cross-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
         </button>
-        <p class="contact-form__politics">
-          Натискаючи на кнопку я погоджуюсь
-          <a class="contact-form__politics--link" href=""
-            >з політикою конфіденційності</a
-          >
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
+        <div class="contact-form">
+          <div class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Ім’я"
+            />
+          </div>
+          <div class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              placeholder="Телефон"
+            />
+          </div>
+          <div class="contact-form__field">
+            <input
+              class="contact-form__input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Електронна пошта"
+            />
+          </div>
+          <button class="button contact-form__button" type="button">
+            <nobr>Замовити дзвінок</nobr>
+          </button>
+          <p class="contact-form__politics">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="contact-form__politics--link" href=""
+              >з політикою конфіденційності</a
+            >
+          </p>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

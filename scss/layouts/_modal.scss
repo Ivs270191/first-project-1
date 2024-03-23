@@ -1,8 +1,67 @@
-.modal__title {
-    font-family: Poppins;
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 84px;
-    text-align: center;
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-black);
+}
 
+.modal {
+    position: relative;
+    width: 880px;
+    height: 880px;
+    // top: 72px;
+    // left: 280px;
+    // right: 280px;
+    // bottom: 72px;
+    margin: 72px auto;
+    border-radius: 32px;
+    background-color: var(--primary-white);
+    padding: 128px 128px 187px;
+
+    &__title {
+        font-family: Poppins;
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 84px;
+        text-align: center;
+        margin-bottom: 8px;
+
+
+    }
+
+    &__img {
+        position: absolute;
+        right: 46px;
+        bottom: 36px;
+    }
+
+    &__text {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.09px;
+        text-align: center;
+        color: var(--primary-green);
+        margin-bottom: 72px;
+
+
+    }
+
+    &__close-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border: none;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+
+    }
+
+    &__cross-icon {
+        background-color: var(--primary-white);
+
+    }
 }
