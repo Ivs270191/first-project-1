@@ -846,6 +846,7 @@ a:hover {
   top: 40px;
   right: 40px;
   cursor: pointer;
+  background-color: var(--primary-white);
 }
 .mobile-menu__logo {
   margin: 16px 264px 32px 24px;
