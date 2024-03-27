@@ -9,7 +9,7 @@
 
 
   @media screen and (max-width: 1280px) {
-    margin-bottom: 16px;
+    margin: 0 20px 16px;
   }
 
   &__item {
@@ -92,4 +92,9 @@
   @media screen and (max-width: 1280px) {
     // display: none;
   }
+}
+
+.swiper-slide {
+  min-width: 320px;
+  min-height: 444px;
 }
