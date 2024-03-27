@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- scss -->
     <link rel="stylesheet" href="./scss/main.css" />
   </head>
@@ -132,50 +138,77 @@
     <!-- 4 section -->
     <div class="fourth-section" id="fourth-section">
       <h2 class="fourth-section__title">Формати</h2>
+      <button class="arrow-button" type="button">
+        <svg width="44" height="44">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <div class="format-cards swiper-container">
+        <div class="swiper-wrapper">
+          <li class="format-cards__item walrus swiper-slide">
+            <h3 class="format-cards__item--title">Walrus</h3>
+            <p class="format-cards__item--text">
+              Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
+              пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові місця:
+              є
+            </p>
+          </li>
 
-      <ul class="format-cards">
-        <button class="arrow-button" type="button">
-          <svg width="44" height="44">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
+          <li class="format-cards__item horseshoe swiper-slide">
+            <h3 class="format-cards__item--title">Horseshoe</h3>
+            <p class="format-cards__item--text">
+              Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+              продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
+              відсутні
+            </p>
+          </li>
 
-        <li class="format-cards__item walrus">
-          <h3 class="format-cards__item--title">Walrus</h3>
-          <p class="format-cards__item--text">
-            Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
-            пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові місця: є
-          </p>
-        </li>
+          <li class="format-cards__item handlebar swiper-slide">
+            <h3 class="format-cards__item--title">Handlebar</h3>
+            <p class="format-cards__item--text">
+              Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+              продавець, 1 пекар, 1 помічник пекаря Посадкові місця: відсутні
+            </p>
+          </li>
+          <li class="format-cards__item walrus swiper-slide">
+            <h3 class="format-cards__item--title">Walrus</h3>
+            <p class="format-cards__item--text">
+              Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
+              пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові місця:
+              є
+            </p>
+          </li>
 
-        <li class="format-cards__item horseshoe">
-          <h3 class="format-cards__item--title">Horseshoe</h3>
-          <p class="format-cards__item--text">
-            Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
-            продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
-            відсутні
-          </p>
-        </li>
+          <li class="format-cards__item horseshoe swiper-slide">
+            <h3 class="format-cards__item--title">Horseshoe</h3>
+            <p class="format-cards__item--text">
+              Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+              продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
+              відсутні
+            </p>
+          </li>
 
-        <li class="format-cards__item handlebar">
-          <h3 class="format-cards__item--title">Handlebar</h3>
-          <p class="format-cards__item--text">
-            Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1 продавець,
-            1 пекар, 1 помічник пекаря Посадкові місця: відсутні
-          </p>
-        </li>
-
-        <button class="arrow-button__after" type="button">
-          <svg width="44" height="44">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-        </button>
-      </ul>
+          <li class="format-cards__item handlebar swiper-slide">
+            <h3 class="format-cards__item--title">Handlebar</h3>
+            <p class="format-cards__item--text">
+              Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+              продавець, 1 пекар, 1 помічник пекаря Посадкові місця: відсутні
+            </p>
+          </li>
+        </div>
+      </div>
+      <button class="arrow-button__after" type="button">
+        <svg width="44" height="44">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
       <div class="pagination">
-        <button class="pagination__button" type="button"></button
-        ><button class="pagination__button" type="button"></button
-        ><button class="pagination__button" type="button"></button
-        ><button class="pagination__button" type="button"></button>
+        <span class="pagination__button"></span
+        ><span class="pagination__button"></span
+        ><span class="pagination__button"></span
+        ><span class="pagination__button"></span>
+        <span class="pagination__button"></span>
+        <span class="pagination__button"></span>
       </div>
     </div>
     <!-- 5 section -->
@@ -390,7 +423,9 @@
         </li>
       </ul>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

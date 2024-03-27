@@ -389,18 +389,17 @@ a:hover {
 }
 
 .fourth-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
   margin-bottom: 96px;
 }
 .fourth-section__title {
+  display: block;
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
   line-height: 84px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  text-align: center;
 }
 @media screen and (max-width: 1280px) {
   .fourth-section__title {
@@ -415,11 +414,10 @@ a:hover {
 
 .format-cards {
   position: relative;
-  display: flex;
   justify-content: center;
   margin: 0 100px 96px;
-  gap: 20px;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1280px) {
   .format-cards {
@@ -428,7 +426,7 @@ a:hover {
 }
 .format-cards__item {
   z-index: 2;
-  width: 349px;
+  width: 100%;
   height: 444px;
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
@@ -465,26 +463,17 @@ a:hover {
 
 .walrus {
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%), url(../images/walrus@x1.png);
+  background-size: cover;
 }
 
 .horseshoe {
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%), url(../images/horseshoe@x1.png);
+  background-size: cover;
 }
-@media screen and (max-width: 1280px) {
-  .horseshoe {
-    display: none;
-  }
-}
-
 .handlebar {
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%), url(../images/handlebar@x1.png);
+  background-size: cover;
 }
-@media screen and (max-width: 1280px) {
-  .handlebar {
-    display: none;
-  }
-}
-
 .arrow-button {
   width: 44px;
   height: 44px;
@@ -492,8 +481,8 @@ a:hover {
   background-color: var(--primary-white);
   border: none;
   position: absolute;
-  left: -60px;
-  top: 200px;
+  left: 30px;
+  top: 50%;
   cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
@@ -509,8 +498,8 @@ a:hover {
   border: none;
   position: absolute;
   transform: rotate(180deg);
-  right: -60px;
-  top: 200px;
+  right: 30px;
+  top: 50%;
   cursor: pointer;
 }
 @media screen and (max-width: 1280px) {
@@ -531,7 +520,7 @@ a:hover {
   height: 11px;
   background-color: var(--secondary-brown);
 }
-.pagination__button:hover {
+.pagination__button--active {
   background-color: var(--secondary-green);
 }
 
