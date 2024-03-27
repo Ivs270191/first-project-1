@@ -474,11 +474,6 @@ a:hover {
   background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%), url(../images/handlebar@x1.png);
   background-size: cover;
 }
-.swiper-slide {
-  min-width: 320px;
-  min-height: 444px;
-}
-
 .arrow-button {
   width: 44px;
   height: 44px;
